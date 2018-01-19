@@ -464,9 +464,6 @@
     <ClInclude Include="sph\sph_sha2.h">
       <Filter>Header Files\sph</Filter>
     </ClInclude>
-    <ClInclude Include="compat\winansi.h">
-      <Filter>Header Files\compat</Filter>
-    </ClInclude>
     <ClInclude Include="nvml.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -595,6 +592,9 @@
     </ClInclude>
     <ClInclude Include="equi\equihash.h">
       <Filter>Source Files\equi</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\winansi.h">
+      <Filter>Header Files\CUDA</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -982,5 +982,22 @@
     <Text Include="README.txt">
       <Filter>Ressources</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="compat\curl-for-windows\out\x86\Release\lib\libeay32.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+    <Library Include="compat\curl-for-windows\out\x86\Release\lib\ssleay32.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+    <Library Include="compat\curl-for-windows\out\x86\Release\lib\zlib.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+    <Library Include="compat\curl-for-windows\out\x86\Release\lib\libcurl_a.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+    <Library Include="compat\curl-for-windows\out\x86\Release\lib\zlibstatic.lib">
+      <Filter>Source Files</Filter>
+    </Library>
   </ItemGroup>
 </Project>

@@ -1,5 +1,11 @@
 # ccminer
 
+32 bit only! | Version 2.2.4 quick fork for lesser abuse of hashrate going down and up on mining pools. To reduce no acceptance to certain sites. Higher speedups with different code change of project. Only Release x32 Cuda Toolkit 9.1
+
+Dealazer BTC Donation Address: 1MC5BmYgTVfei3Mf64j3hNwtcf6vfx5FNg 
+
+Change compute_61;sm_61; to your compute type of graphic card. or more if likely. Quick compilation.
+
 Based on Christian Buchner's &amp; Christian H.'s CUDA project, no more active on github since 2014.
 
 Check the [README.txt](README.txt) for the additions

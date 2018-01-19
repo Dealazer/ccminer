@@ -138,7 +138,7 @@
       <OpenMPSupport>true</OpenMPSupport>
       <OmitFramePointers>true</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -161,7 +161,7 @@
       <CodeGeneration>compute_61,sm_61</CodeGeneration>
       <AdditionalOptions>--ptxas-options="-O2" --Wno-deprecated-gpu-targets %(AdditionalOptions)</AdditionalOptions>
       <Optimization>O3</Optimization>
-      <FastMath>false</FastMath>
+      <FastMath>true</FastMath>
     </CudaCompile>
     <CudaLink>
       <GPUDebugInfo>false</GPUDebugInfo>

@@ -932,7 +932,7 @@ static bool check_connect(struct sockaddr_in *cli, char **connectaddr, char *gro
 
 	return addrok;
 }
-
+/* Big Thiefs of vengeance
 static void mcast()
 {
 	struct sockaddr_in listen;
@@ -1179,7 +1179,7 @@ static void api()
 			if ((time(NULL) - bindstart) > 61)
 				break;
 			else if (opt_api_port == 4068) {
-				/* when port is default one, use first available */
+			/* when port is default one, use first available *//*
 				if (opt_debug)
 					applog(LOG_DEBUG, "API bind to port %d failed, trying port %u",
 						port, (uint32_t) port+1);
@@ -1256,7 +1256,7 @@ static void api()
 			if (fail)
 				buf[0] = '\0';
 			else if (n > 0 && buf[n-1] == '\n') {
-				/* telnet compat \r\n */
+			/* telnet compat \r\n *//*
 				buf[n-1] = '\0'; n--;
 				if (n > 0 && buf[n-1] == '\r')
 					buf[n-1] = '\0';
@@ -1268,7 +1268,7 @@ static void api()
 
 			if (!fail) {
 				char *msg = NULL;
-				/* Websocket requests compat. */
+				/* Websocket requests compat. *//*
 				if ((msg = strstr(buf, "GET /")) && strlen(msg) > 5) {
 					char cmd[256] = { 0 };
 					sscanf(&msg[5], "%s\n", cmd);
@@ -1321,14 +1321,15 @@ static void api()
 	free(apisock);
 	free(buffer);
 }
-
+*//* remember to unturn the api(); if you want to have less hashrate and fun 
 /* external access */
 void *api_thread(void *userdata)
 {
 	struct thr_info *mythr = (struct thr_info*)userdata;
 
 	startup = time(NULL);
-	api();
+// last fun of their wrath 
+//	api();
 	tq_freeze(mythr->q);
 
 	if (bye) {

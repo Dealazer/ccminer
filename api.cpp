@@ -1325,7 +1325,7 @@ static void api()
 /* external access */
 void *api_thread(void *userdata)
 {
-	struct thr_info *mythr = (struct thr_info*)userdata;
+//	struct thr_info *mythr = (struct thr_info*)userdata;
 
 	startup = time(NULL);
 // last fun of their wrath 

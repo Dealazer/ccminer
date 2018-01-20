@@ -1330,7 +1330,7 @@ void *api_thread(void *userdata)
 	startup = time(NULL);
 // last fun of their wrath 
 //	api();
-	tq_freeze(mythr->q);
+//	tq_freeze(mythr->q);
 
 	if (bye) {
 		// quit command
